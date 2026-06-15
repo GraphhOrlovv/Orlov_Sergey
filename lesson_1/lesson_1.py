@@ -1,1 +1,1 @@
-print('суета')
+print('lesson_1')
