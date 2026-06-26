@@ -92,3 +92,16 @@
 Создайте генератор в котором будет написано True - если объект является итерируемым или False - если нет.
 """
 
+
+# def is_iterable(obj):
+#     try:
+#         iter(obj)
+#         return True
+#     except TypeError:
+#         return False
+#
+#
+# iter_str = [7, "Python", [34, 'Java', 0.5]]
+#
+# for obj in iter_str:
+#     print(f"Объект {obj} - итерируемый? - {is_iterable(obj)}")
