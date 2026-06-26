@@ -19,12 +19,35 @@
 
 """2. Итератор для строки
 Используйте iter() и next() для посимвольного вывода строки."""
+# Если нужно использовать и iter() и next(), то вот так:
 
-new_str = 'Python'
+# new_str = 'Python'
+#
+# str_iter = iter(new_str)
+# i = 0
+# while len(new_str) - i > 0:
+#     print(next(str_iter), end='  ')
+#     i += 1
 
-str_iter = iter(new_str)
+# Можно ещё так:
 
+# new_str = 'Python'
+#
+# str_iter = iter(new_str)
+# for _ in range(len(new_str)):
+#     print(next(str_iter), end='  ')
 
+# Или так:
+
+# new_str = 'Python'
+#
+# str_iter = iter(new_str)
+#
+# while True:
+#     try:
+#         print(next(str_iter), end='  ')
+#     except StopIteration:
+#         break
 
 """++++++++++++++++++++++++++++++++++++++++++++++++
 Задачи по теме "Генераторы списков (List Comprehensions)"
