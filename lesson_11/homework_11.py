@@ -230,3 +230,26 @@ print(merge_dicts(d1, d2, d3))
 Ожидаемый результат:
 {'a': 1, 'b': 3, 'c': 5, 'd': 6}
 """
+
+# Можно так:
+# def merge_dicts(*dicts):
+#     result = {}
+#     for dict_i in dicts:
+#         result.update(dict_i)
+#     return result
+#
+# d1 = {"a": 1, "b": 2}
+# d2 = {"b": 3, "c": 4}
+# d3 = {"c": 5, "d": 6}
+#
+# print(merge_dicts(d1, d2, d3))
+
+# А можно вот так:
+# def merge_dicts(*dicts):
+#     return {key: value for dict_i in dicts for key, value in dict_i.items()}
+#
+# d1 = {"a": 1, "b": 2}
+# d2 = {"b": 3, "c": 4}
+# d3 = {"c": 5, "d": 6}
+#
+# print(merge_dicts(d1, d2, d3))
