@@ -142,7 +142,7 @@ print(compare_strings("Hello ", "Hello", ignore_spaces=False))  # False
 
 # Можно ещё так:
 
-# def compare_strings(s1:str, s2, ignore_case=True, ignore_spaces=True):
+# def compare_strings(s1, s2, ignore_case=True, ignore_spaces=True):
 #     if ignore_case:
 #         s1, s2 = s1.lower(), s2.lower()
 #     if ignore_spaces:
@@ -159,8 +159,15 @@ print(compare_strings("Hello ", "Hello", ignore_spaces=False))  # False
 Пример вызова:
 print(summarize(1, 2, 3))           # 6
 print(summarize(10, "abc", 5, 2))   # 17 (игнорируем "abc")
-===============================================
-11. Напишите функцию create_profile(name, age, **extra),
+==============================================="""
+
+# def summarize(*args):
+#     return sum(arg for arg in args if isinstance(arg, (int, float)))
+#
+# print(summarize(1, 2, 3))
+# print(summarize(10, "abc", 5, 2))
+
+"""11. Напишите функцию create_profile(name, age, **extra),
 которая принимает имя, возраст и дополнительные параметры
 (например, city, job, hobby) и выводит информацию о пользователе.
 Пример вызова:
