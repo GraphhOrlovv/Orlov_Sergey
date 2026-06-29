@@ -198,9 +198,12 @@ print(process_orders(100, 200, 300, discount=10))
 С учетом скидки: 540
 ==============================================="""
 
-def process_orders(*orders, discount=0):
-    summ = sum(orders)
-    itog_summ = summ*()
+# def process_orders(*orders, discount=0):
+#     summ = sum(orders)
+#     itog_summ = summ * (1 - 0.01 * discount)
+#     return f"Сумма заказа: {summ}\nС учетом скидки: {itog_summ}"
+#
+# print(process_orders(100, 200, 300, discount=10))
 
 """13. Создайте функцию merge_lists(*lists), которая объединяет несколько списков в один.
 Пример вызова:
