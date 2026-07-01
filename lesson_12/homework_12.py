@@ -71,3 +71,18 @@ print(c2())  # 2
 
 Подсказка: используйте nonlocal
 """
+
+# def counter(start=0):
+#     def in_counter():
+#         nonlocal start
+#         start += 1
+#         return start
+#     return in_counter
+#
+# c1 = counter(5)
+# c2 = counter()
+#
+# print(c1())
+# print(c1())
+# print(c2())
+# print(c2())
