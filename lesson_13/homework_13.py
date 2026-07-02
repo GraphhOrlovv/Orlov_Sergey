@@ -88,3 +88,40 @@ def slow_function():
     time.sleep(1)
 slow_function()  # Среднее время выполнения: 1.0002 сек
 """
+
+# import time
+#
+# def timer(repeat=0):
+#     def timer_in(func):
+#         results_time = []
+#         def wrapper(*args, **kwargs):
+#             for i in range(1, repeat+1):
+#                 time_before = time.time()
+#                 func(*args,**kwargs)
+#                 time_after = time.time()
+#                 result = time_after - time_before
+#                 results_time.append(result)
+#                 print(f"Время выполнения {i}-{'ей' if i == 3 else 'ой'} функции {func.__name__} = {result}") # для себя добавил, так красивее как будто
+#             print(f"Среднее время выполнения: {sum(results_time) / len(results_time)}")
+#         return wrapper
+#     return timer_in
+#
+# @timer(3)
+# def slow_function():
+#     time.sleep(1)
+#
+# slow_function()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
